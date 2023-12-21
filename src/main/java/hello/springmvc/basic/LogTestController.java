@@ -1,12 +1,16 @@
 package hello.springmvc.basic;
 
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+//@Slf4j  //Lombok이 제공해주는 annotation
+        // (private final Logger log = LoggerFactory.getLogger(getClass()); 자동생성)
 @RestController
 public class LogTestController {
+
     private final Logger log = LoggerFactory.getLogger(getClass());
 
     @RequestMapping("/log-test") //@GetMapping도 사용가능
