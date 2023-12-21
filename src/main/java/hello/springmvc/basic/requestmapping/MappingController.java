@@ -46,9 +46,11 @@ public class MappingController {
         return "ok";
     }
 
-    /** 4.
+    /**
+     * 4.
      * PathVariable 사용
      * 변수명이 같으면 생략 가능
+     *
      * @PathVariable("userId") String userId -> @PathVariable userId
      */
     @GetMapping("/mapping/{userId}")
@@ -56,4 +58,16 @@ public class MappingController {
         log.info("mappingPath userId={}", data);
         return "ok";
     }
+
+    /**
+     * 5.
+     * PathVariable 사용 다중
+     */
+    @GetMapping("/mapping/users/{userId}/orders/{orderId}")
+    public String mappingPath(@PathVariable String userId, @PathVariable Long
+            orderId) {
+        log.info("mappingPath userId={}, orderId={}", userId, orderId);
+        return "ok";
+    }
+
 }
