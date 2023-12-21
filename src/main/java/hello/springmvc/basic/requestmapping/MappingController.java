@@ -69,5 +69,4 @@ public class MappingController {
         log.info("mappingPath userId={}, orderId={}", userId, orderId);
         return "ok";
     }
-
 }
