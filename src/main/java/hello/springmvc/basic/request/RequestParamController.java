@@ -33,7 +33,7 @@ public class RequestParamController {
      * - View 조회를 무시하고, HTTP message body에 직접 해당 내용 입력 */
     @ResponseBody
     @RequestMapping("/request-param-v2")
-    public String req석uestParamV2(
+    public String requestParamV2(
             @RequestParam("uesrname") String memberName,
             @RequestParam("age") int memberAge){
         log.info("username={}, age={}", memberName, memberAge);
