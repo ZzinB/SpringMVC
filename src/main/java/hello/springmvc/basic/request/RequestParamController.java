@@ -25,6 +25,12 @@ public class RequestParamController {
 
         response.getWriter().write("ok");
     }
+
+    /**
+     * @RequestParam 사용
+     * - 파라미터 이름으로 바인딩
+     * @ResponseBody 추가
+     * - View 조회를 무시하고, HTTP message body에 직접 해당 내용 입력 */
     @ResponseBody
     @RequestMapping("/request-param-v2")
     public String requestParamV2(
