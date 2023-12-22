@@ -12,7 +12,7 @@ public class MappingClassController {
      * 회원수정: PATCH                /users/{userId}
      * 회원 삭제: DELETE             /users/{userId}
      * @return
-     */
+     **/
 
     @GetMapping
     public  String user(){
